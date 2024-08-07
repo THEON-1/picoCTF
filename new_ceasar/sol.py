@@ -1,4 +1,4 @@
-#!/home/maxime/.pyvenv/bin/python3
+#!python3
 import string
 
 ALPHABET = string.ascii_lowercase[:16]
