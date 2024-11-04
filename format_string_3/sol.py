@@ -16,7 +16,7 @@ log.info(f"setvbuf base: {hex(setvbuf_base)}")
 libc_base = setvbuf_base - elf.symbols["setvbuf"]
 log.info(f"libc base: {hex(libc_base)}")
 system_base = libc_base + elf.symbols["system"]
-log.info(f"evecve base: {hex(system_base)}")
+log.info(f"system base: {hex(system_base)}")
 
 def discover_offset(payload):
     log.debug(payload)
